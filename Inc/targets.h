@@ -26,6 +26,7 @@
 // #define G071_OPEN_DRAIN_B
 // #define GEN_64K_G071
 // define  DT120_G071
+// #define MOESCV1_G071
 
 // #define WRAITH32_F421
 // #define GD32DEV
@@ -1845,6 +1846,24 @@
 
 /*******************************   G071 Targets
  * *********************************/
+
+
+ #ifdef  MOESCV1_G071
+ #define FILE_NAME				"MOESCV1_G071"
+ #define FIRMWARE_NAME  			 "MOESC AM32 "
+ #define DEAD_TIME               60
+ #define MILLIVOLT_PER_AMP       33
+ #define CURRENT_OFFSET          0
+ #define TARGET_VOLTAGE_DIVIDER  110
+ #define HARDWARE_GROUP_G0_N
+ #define USE_SERIAL_TELEMETRY
+ #define SIXTY_FOUR_KB_MEMORY
+ #define USE_LED_STRIP
+ //#define CURRENT_ADC_CHANNEL LL_ADC_CHANNEL_4
+ //#define CURRENT_ADC_PIN LL_GPIO_PIN_4
+ //#define USE_RGB_LED
+ #endif
+ 
 
 #ifdef AIRBOT_PHOENIX_12S_G071
 #define FILE_NAME "AIRBOT_PHOENIX_12S_G071"

@@ -1507,7 +1507,7 @@
 #define USE_SERIAL_TELEMETRY
 #endif
 
-#ifdef SISKIN_11A_F051 // signal pin PB4 bootloader 
+#ifdef SISKIN_11A_F051  
 #define FILE_NAME "SISKIN_11A_F051"
 #define FIRMWARE_NAME "Siskin 11A "
 #define DEAD_TIME 30
@@ -2068,7 +2068,7 @@
 #define CURRENT_ADC_PIN LL_GPIO_PIN_4
 #endif
 
-#ifdef  AORC_GP_G071                 // GP version
+#ifdef  AORC_GP_G071                 
 #define FILE_NAME "AORC_GP_G071"
 #define FIRMWARE_NAME "AORC_GP_G071"
 #define DEAD_TIME 60
@@ -2079,7 +2079,7 @@
 #define SIXTY_FOUR_KB_MEMORY
 #endif
 
-#ifdef  AORC_PD_G071          // N variant
+#ifdef  AORC_PD_G071       
 #define FILE_NAME "AORC_PD_G071"
 #define FIRMWARE_NAME "AORC_PD_G071"
 #define DEAD_TIME 60
@@ -2481,7 +2481,7 @@
 #define RAMP_SPEED_STARTUP 2 // adjusted 2.14 to match duty cycle change between mcu targets.
 #endif
 
-#ifndef RAMP_SPEED_LOW_RPM // below commutation interval of 250us
+#ifndef RAMP_SPEED_LOW_RPM
 #define RAMP_SPEED_LOW_RPM 6
 #endif
 
